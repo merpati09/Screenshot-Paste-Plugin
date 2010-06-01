@@ -1,0 +1,18 @@
+<p><label>Screenshot</label>
+	<small><a href="#" onclick="Element.show('imageuploadapplet'); Element.show('uploaded_screenshot_fields'); document.imageuploadapplet.getImageFromClipboad(); return false;">
+	Drag or paste from clipboard</a></small><br />
+		<applet archive="/plugin_assets/redmine_screenshot_paste/simageuploadapplet.jar"
+					  code="imageuploadapplet.Main"
+					  name="imageuploadapplet"
+					  id="imageuploadapplet"
+				  	hspace="0" vspace="0" width="400" height="200" align="middle"
+				  	style="display:none;">
+		</applet>
+		<br />
+		<span id="uploaded_screenshot_fields" style="display:none;">
+		<small>Name / Description:</small><br />
+		<input type="text" name="uploaded_screenshot[name]" value="screenshot" />
+		<input type="text" name="uploaded_screenshot[description]" size="60" />
+		</span>
+</p>
+<input type="hidden" name="uploaded_screenshot[content]" id="image" />
